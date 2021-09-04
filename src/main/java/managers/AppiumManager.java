@@ -12,8 +12,8 @@ public class AppiumManager {
         return appiumServer;
     }
 
-    public void setAppiumServer(AppiumDriverLocalService appiumServer2) {
-        appiumServer = appiumServer2;
+    public void setAppiumServer(AppiumDriverLocalService newAppiumServer) {
+        appiumServer = newAppiumServer;
     }
 
     public void startAppiumServer() {
@@ -22,7 +22,7 @@ public class AppiumManager {
         appiumDriverLocalService.start();
 
         if (!appiumDriverLocalService.isRunning()) {
-            throw new AppiumServerHasNotBeenStartedLocallyException("Appium server didn't start. ABORT!!!");
+            throw new AppiumServerHasNotBeenStartedLocallyException("Appium server didn't start!!!");
         }
         appiumDriverLocalService.clearOutPutStreams();
         setAppiumServer(appiumDriverLocalService);
