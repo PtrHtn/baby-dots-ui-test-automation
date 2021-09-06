@@ -21,4 +21,9 @@ public class BasePage {
             System.out.println("Something went wrong in waitForVisibilityOf method: " + exception);
         }
     }
+
+    private String getAttributeOf(MobileElement element, String attribute) {
+        waitForVisibilityOf(element);
+        return element.getAttribute(attribute);
+    }
 }
