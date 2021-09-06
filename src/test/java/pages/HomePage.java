@@ -1,5 +1,11 @@
 package pages;
 
-public class HomePage extends BasePage{
+import pages.components.AppBar;
 
+public class HomePage extends BasePage{
+    private AppBar appBar;
+
+    public HomePage() {
+        appBar = new AppBar();
+    }
 }
