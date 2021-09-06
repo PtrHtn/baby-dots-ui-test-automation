@@ -3,6 +3,7 @@ package pages;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import managers.DriverManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -25,5 +26,11 @@ public class BasePage {
     private String getAttributeOf(MobileElement element, String attribute) {
         waitForVisibilityOf(element);
         return element.getAttribute(attribute);
+    }
+
+    protected boolean isDisplayed(By parentLocator, By childLocator, int nthChildLocator){
+        MobileElement element = (MobileElement) driver.findElement(parentLocator).findElements(childLocator).get(nthChildLocator);
+        waitForVisibilityOf(element);
+        return Boolean.parseBoolean(getAttributeOf(element, "displayed"));
     }
 }
