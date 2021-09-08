@@ -7,5 +7,7 @@ import pages.BasePage;
 public class AppBar extends BasePage {
 
     private final By toolbarLocator = MobileBy.id("toolbar");
+    private final By titleLocator = MobileBy.className("android.widget.TextView");
+
 
 }
