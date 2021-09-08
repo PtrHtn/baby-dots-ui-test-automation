@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
     private final AndroidDriver<?> driver;
+    private static final long WAIT_TIME = 30;
 
     public BasePage() {
         this.driver = new DriverManager().getDriver();
