@@ -8,4 +8,8 @@ public class HomePage extends BasePage{
     public HomePage() {
         appBar = new AppBar();
     }
+
+    public AppBar appBar() {
+        return appBar;
+    }
 }
