@@ -53,5 +53,10 @@ public class BasePage {
         waitForVisibilityOf(locator);
         return Boolean.parseBoolean(getAttributeOf(locator, "displayed"));
     }
-
+    
+    protected String getTextOf(By parentLocator, By childLocator, int nthChildLocator) {
+        MobileElement element = (MobileElement) driver.findElement(parentLocator).findElements(childLocator).get(nthChildLocator);
+        waitForVisibilityOf(element);
+        return getAttributeOf(element, "text");
+    }
 }
