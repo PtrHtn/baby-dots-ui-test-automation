@@ -49,4 +49,9 @@ public class BasePage {
         return Boolean.parseBoolean(getAttributeOf(element, "displayed"));
     }
 
+    protected boolean isDisplayed(By locator){
+        waitForVisibilityOf(locator);
+        return Boolean.parseBoolean(getAttributeOf(locator, "displayed"));
+    }
+
 }
