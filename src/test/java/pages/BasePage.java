@@ -24,6 +24,15 @@ public class BasePage {
         }
     }
 
+    private void waitForVisibilityOf(By locator) {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, WAIT_TIME);
+            wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        }catch (Exception exception) {
+            System.out.println("Something went wrong in waitForVisibilityOf method: " + exception);
+        }
+    }
+
     private String getAttributeOf(MobileElement element, String attribute) {
         waitForVisibilityOf(element);
         return element.getAttribute(attribute);
@@ -34,4 +43,5 @@ public class BasePage {
         waitForVisibilityOf(element);
         return Boolean.parseBoolean(getAttributeOf(element, "displayed"));
     }
+
 }
