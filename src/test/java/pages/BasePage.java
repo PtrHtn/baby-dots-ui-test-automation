@@ -38,6 +38,11 @@ public class BasePage {
         return element.getAttribute(attribute);
     }
 
+    private String getAttributeOf(By locator, String attribute) {
+        waitForVisibilityOf(locator);
+        return driver.findElement(locator).getAttribute(attribute);
+    }
+
     protected boolean isDisplayed(By parentLocator, By childLocator, int nthChildLocator){
         MobileElement element = (MobileElement) driver.findElement(parentLocator).findElements(childLocator).get(nthChildLocator);
         waitForVisibilityOf(element);
