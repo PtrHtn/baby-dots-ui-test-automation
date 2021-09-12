@@ -13,5 +13,6 @@ public class AppLaunchStepdefs {
 
     @Then("title {title} is shown on the screen")
     public void titleIsShownOnTheScreen(String title) {
+        Assert.assertEquals(new HomePage().appBar().getTitle(), title);
     }
 }
