@@ -13,4 +13,8 @@ public class AppBar extends BasePage {
         return isDisplayed(toolbarLocator, titleLocator, 0);
     }
 
+    public String getTitle() {
+        return getTextOf(toolbarLocator, titleLocator, 0);
+    }
+
 }
