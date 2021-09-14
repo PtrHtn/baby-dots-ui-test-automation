@@ -9,6 +9,8 @@ public class AppLaunchStepdefs {
     @Given("an app is at the Baby Dots home screen")
     public void anAppIsAtTheBabyDotsHomeScreen() {
         Assert.assertTrue(new HomePage().appBar().titleIsDisplayed());
+        Assert.assertTrue(new HomePage().appBar().soundIconIsDisplayed());
+
     }
 
     @Then("title {title} is shown on the screen")
