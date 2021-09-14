@@ -17,5 +17,9 @@ public class AppBar extends BasePage {
     public String getTitle() {
         return getTextOf(toolbarLocator, titleLocator, 0);
     }
+    public boolean soundIconIsDisplayed(){
+        return isDisplayed(soundLocator);
+    }
+
 
 }
