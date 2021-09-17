@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.net.URL;
 
 public class DriverManager {
-    private AndroidDriver driver = null;
+private static AndroidDriver driver = null;
 
 
     public AndroidDriver getDriver() {
