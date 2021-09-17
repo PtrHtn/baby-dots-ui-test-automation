@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeClass;
 
 @CucumberOptions(
         plugin = {"pretty"
-                , "html:target/cucumber"
+                , "html:target/General/cucumber-default-html-report.html"
                 , "summary"
         }
         , features = {"classpath:features"}
