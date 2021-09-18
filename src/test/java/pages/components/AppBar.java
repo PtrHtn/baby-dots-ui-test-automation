@@ -23,6 +23,9 @@ public class AppBar extends BasePage {
     public boolean soundIconIsDisplayed(){
         return isDisplayed(soundIconLocator);
     }
+    public boolean lockIconIsDisplayed(){
+        return isDisplayed(lockIconLocator);
+    }
 
 
 }
