@@ -7,18 +7,21 @@ import pages.BasePage;
 public class AppBar extends BasePage {
 
     private final By toolbarLocator = MobileBy.id("toolbar");
-    private final By titleLocator = MobileBy.className("android.widget.TextView");
-    private final By soundLocator = MobileBy.id("menu_sound");
+    private final By appTitleLocator = MobileBy.className("android.widget.TextView");
+    private final By soundIconLocator = MobileBy.id("menu_sound");
+    private final By lockIconLocator = MobileBy.id("menu_lock");
+
 
     public boolean titleIsDisplayed(){
-        return isDisplayed(toolbarLocator, titleLocator, 0);
+        return isDisplayed(toolbarLocator, appTitleLocator, 0);
     }
 
+
     public String getTitle() {
-        return getTextOf(toolbarLocator, titleLocator, 0);
+        return getTextOf(toolbarLocator, appTitleLocator, 0);
     }
     public boolean soundIconIsDisplayed(){
-        return isDisplayed(soundLocator);
+        return isDisplayed(soundIconLocator);
     }
 
 
