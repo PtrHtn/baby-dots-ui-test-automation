@@ -10,7 +10,7 @@ public class AppBar extends BasePage {
     private final By appTitleLocator = MobileBy.className("android.widget.TextView");
     private final By soundIconLocator = MobileBy.id("menu_sound");
     private final By lockIconLocator = MobileBy.id("menu_lock");
-
+    private final By moreOptionsIconLocator = MobileBy.AccessibilityId("More options");
 
     public boolean titleIsDisplayed(){
         return isDisplayed(toolbarLocator, appTitleLocator, 0);
