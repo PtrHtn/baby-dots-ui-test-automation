@@ -11,6 +11,7 @@ public class AppLaunchStepdefs {
         Assert.assertTrue(new HomePage().appBar().titleIsDisplayed());
         Assert.assertTrue(new HomePage().appBar().soundIconIsDisplayed());
         Assert.assertTrue(new HomePage().appBar().lockIconIsDisplayed());
+        Assert.assertTrue(new HomePage().appBar().moreOptionsMenuIconIsDisplayed());
 
     }
 
