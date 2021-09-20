@@ -26,6 +26,9 @@ public class AppBar extends BasePage {
     public boolean lockIconIsDisplayed(){
         return isDisplayed(lockIconLocator);
     }
+    public boolean moreOptionsMenuIconIsDisplayed(){
+        return isDisplayed(moreOptionsIconLocator);
+    }
 
 
 }
