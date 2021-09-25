@@ -10,10 +10,13 @@ public class HomePage extends BasePage{
     }
 
     private AppBar appBar;
-
-    private final By babyDotsWindowLocator = MobileBy.id("dots");
+    private final By babyDotsViewLocator = MobileBy.id("dots");
 
     public AppBar appBar() {
         return appBar;
     }
+    public boolean babyDotsViewIsDisplayed(){
+        return isDisplayed(babyDotsViewLocator);
+    }
+
 }
