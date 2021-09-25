@@ -12,7 +12,7 @@ public class AppLaunchStepdefs {
         Assert.assertTrue(new HomePage().appBar().soundIconIsDisplayed());
         Assert.assertTrue(new HomePage().appBar().lockIconIsDisplayed());
         Assert.assertTrue(new HomePage().appBar().moreOptionsMenuIconIsDisplayed());
-
+        Assert.assertTrue(new HomePage().babyDotsViewIsDisplayed());
     }
 
     @Then("title {string} is shown on the screen")
