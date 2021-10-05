@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeClass;
         plugin = {"pretty"
                 , "html:target/General/cucumber-default-html-report.html"
                 , "summary"
+                , "me.jvt.cucumber.report.PrettyReports:target/General"
         }
         , features = {"classpath:features"}
         , glue = {"classpath:step_definitions"}

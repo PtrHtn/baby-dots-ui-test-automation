@@ -33,6 +33,13 @@
             <artifactId>cucumber-testng</artifactId>
             <version>6.11.0</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/me.jvt.cucumber/reporting-plugin -->
+        <dependency>
+            <groupId>me.jvt.cucumber</groupId>
+            <artifactId>reporting-plugin</artifactId>
+            <version>5.2.1</version>
+        </dependency>
     </dependencies>
 
 </project>
