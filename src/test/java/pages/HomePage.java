@@ -19,5 +19,8 @@ public class HomePage extends BasePage{
     public boolean babyDotsViewIsDisplayed(){
         return isDisplayed(babyDotsViewLocator);
     }
+    public boolean fabIsDisplayed(){
+        return isDisplayed(fabLocator);
+    }
 
 }
