@@ -11,6 +11,7 @@ public class HomePage extends BasePage{
 
     private AppBar appBar;
     private final By babyDotsViewLocator = MobileBy.id("dots");
+    private final By fabLocator = MobileBy.id("sd_main_fab");
 
     public AppBar appBar() {
         return appBar;
