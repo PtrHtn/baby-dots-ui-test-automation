@@ -4,5 +4,5 @@ Feature: app launch scenarios
 
   @SmokeTest
   Scenario: User can launch Baby Dots app
-    Given an app is at the Baby Dots home screen
+    When an app is at the Baby Dots home screen
     Then title "Baby Dots" is shown on the screen
