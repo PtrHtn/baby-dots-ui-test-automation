@@ -1,6 +1,7 @@
 @AppLaunch
-Feature: app launch scenarios
-  Will verify if Baby Dots app is launching as expected
+Feature: User can launch the app
+
+Rule: User should see running app on the screen after app was launched
 
   @SmokeTest
   Scenario: User can launch Baby Dots app
